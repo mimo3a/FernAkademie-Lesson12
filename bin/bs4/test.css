@@ -1,0 +1,9 @@
+#buttonDrehen {
+	-fx-background-radius: 30px;
+	-fx-text-fill: red;
+	-fx-background-color : yellow;
+	}
+#ausgabe {
+	-fx-background-color : yellow;
+	-fx-border-color : black;
+	}

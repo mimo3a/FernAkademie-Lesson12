@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane accessibleText="Hallo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="353.0" stylesheets="@test.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bs4.FXMLController">
+   <top>
+      <Button id="buttonDrehen" fx:id="buttonDrehen" mnemonicParsing="false" onAction="#rotateKlick" stylesheets="@test.css" text="Einfach drehen" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Button fx:id="multydrehen" mnemonicParsing="false" onAction="#rotateMult" text="Multy drehen" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <Label fx:id="ausgabe" onMouseEntered="#labelMausRein" onMouseExited="#labelMausRaus" text="Cover zoomen" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Button fx:id="buttonZoomen" mnemonicParsing="false" onAction="#zoomKlick" text="Eimfach zoomen" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Button fx:id="multyzoomen" mnemonicParsing="false" onAction="#autoZoom" text="Multy zoomen" BorderPane.alignment="CENTER" />
+   </right>
+   <opaqueInsets>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</BorderPane>
